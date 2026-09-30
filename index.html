@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bases de Meta Ads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="viewport">
+<div id="stage">
+
+<!-- ============ PORTADA ============ -->
+<section class="slide cover" data-sec="Inicio">
+  <div class="cover-orbs"><span></span><span></span><span></span></div>
+  <div class="tag a">Base de conocimiento compartida · Neisstech</div>
+  <h1 class="a mega">Meta Ads<br><span class="grad">las bases</span></h1>
+  <p class="a lead">Estructura · Pixel · Audiencias · Presupuesto · Estrategia · Métricas</p>
+  <div class="a hint">← → para navegar</div>
+</section>
+
+<!-- ============ ÍNDICE ============ -->
+<section class="slide" data-sec="Índice">
+  <h2 class="a">Mapa de la presentación</h2>
+  <div class="grid4 idx">
+    <div class="card a"><b>01</b>Estructura de campaña</div>
+    <div class="card a"><b>02</b>Objetivos que usamos</div>
+    <div class="card a"><b>03</b>Pixel, CAPI y Audiencias</div>
+    <div class="card a"><b>04</b>Tipos de campaña (embudo)</div>
+    <div class="card a"><b>05</b>Presupuestos</div>
+    <div class="card a"><b>06</b>ABO vs CBO</div>
+    <div class="card a"><b>07</b>Arquitectura de cuenta</div>
+    <div class="card a"><b>08</b>Advantage+ y Meta AI</div>
+    <div class="card a"><b>09</b>La pelea con Meta</div>
+    <div class="card a"><b>10</b>Qué medir en el Pixel</div>
+    <div class="card a"><b>11</b>Métricas por nivel</div>
+    <div class="card a"><b>12</b>Estrategias de Paid Media</div>
+  </div>
+</section>
+
+<!-- ============ 01 ESTRUCTURA ============ -->
+<section class="slide divider" data-sec="01 · Estructura">
+  <div class="num a">01</div>
+  <h2 class="a big">Estructura de una campaña</h2>
+  <p class="a lead">3 niveles. Cada uno decide cosas distintas.</p>
+</section>
+
+<section class="slide" data-sec="01 · Estructura">
+  <h2 class="a">El árbol</h2>
+  <div class="tree">
+    <svg class="tree-lines" viewBox="0 0 1400 560" preserveAspectRatio="none">
+      <path class="draw" d="M700 95 C700 170 380 150 380 230"/>
+      <path class="draw" d="M700 95 C700 170 1020 150 1020 230"/>
+      <path class="draw d2" d="M380 300 C380 370 170 360 170 430"/>
+      <path class="draw d2" d="M380 300 L380 430"/>
+      <path class="draw d2" d="M380 300 C380 370 590 360 590 430"/>
+      <path class="draw d2" d="M1020 300 C1020 370 810 360 810 430"/>
+      <path class="draw d2" d="M1020 300 L1020 430"/>
+      <path class="draw d2" d="M1020 300 C1020 370 1230 360 1230 430"/>
+    </svg>
+    <div class="node camp a" style="left:560px;top:20px">📣 Campaña</div>
+    <div class="node set a" style="left:260px;top:230px">🎯 Ad set A</div>
+    <div class="node set a" style="left:900px;top:230px">🎯 Ad set B</div>
+    <div class="node ad a" style="left:95px;top:430px">🎬 Ad</div>
+    <div class="node ad a" style="left:305px;top:430px">🖼️ Ad</div>
+    <div class="node ad a" style="left:515px;top:430px">🎬 Ad</div>
+    <div class="node ad a" style="left:735px;top:430px">🖼️ Ad</div>
+    <div class="node ad a" style="left:945px;top:430px">🎬 Ad</div>
+    <div class="node ad a" style="left:1155px;top:430px">🖼️ Ad</div>
+  </div>
+</section>
+
+<section class="slide" data-sec="01 · Estructura">
+  <h2 class="a">¿Qué se decide en cada nivel?</h2>
+  <div class="grid3">
+    <div class="col a c-blue">
+      <div class="col-h">📣 Campaña</div>
+      <ul><li>Objetivo</li><li>Presupuesto (si es CBO)</li><li>Tipo de compra</li><li>Categoría especial</li></ul>
+      <div class="q">"¿Qué quiero lograr?"</div>
+    </div>
+    <div class="col a c-purple">
+      <div class="col-h">🎯 Ad set</div>
+      <ul><li>Audiencia</li><li>Ubicaciones</li><li>Evento a optimizar</li><li>Presupuesto (si es ABO)</li><li>Calendario / puja</li></ul>
+      <div class="q">"¿A quién, dónde y cuánto?"</div>
+    </div>
+    <div class="col a c-pink">
+      <div class="col-h">🎬 Anuncio</div>
+      <ul><li>Creativo (video / imagen)</li><li>Texto y título</li><li>CTA</li><li>URL de destino</li><li>Mejoras IA (¡ojo!)</li></ul>
+      <div class="q">"¿Qué ven?"</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 OBJETIVOS ============ -->
+<section class="slide divider" data-sec="02 · Objetivos">
+  <div class="num a">02</div>
+  <h2 class="a big">Objetivos de campaña</h2>
+  <p class="a lead">Meta tiene 6. Nosotros vivimos en 2.</p>
+</section>
+
+<section class="slide" data-sec="02 · Objetivos">
+  <h2 class="a">Los 6 objetivos</h2>
+  <div class="grid3 obj">
+    <div class="card a dim">📢 Reconocimiento<small>alcance / recordación</small></div>
+    <div class="card a dim">🖱️ Tráfico<small>clics / visitas</small></div>
+    <div class="card a dim">💬 Interacción<small>mensajes / video / likes</small></div>
+    <div class="card a hot">🧲 Clientes potenciales<small>formularios · agendas</small><span class="badge">USAMOS</span></div>
+    <div class="card a dim">📱 Promoción de app<small>instalaciones</small></div>
+    <div class="card a hot">🛒 Ventas<small>compras online</small><span class="badge">USAMOS</span></div>
+  </div>
+  <p class="foot a">Regla: el objetivo = la acción que quieres que Meta consiga. Meta optimiza exactamente para eso.</p>
+</section>
+
+<section class="slide" data-sec="02 · Objetivos">
+  <h2 class="a">Leads vs Ventas</h2>
+  <div class="flowrow a">
+    <div class="flabel c-blue">🧲 Clientes potenciales</div>
+    <div class="flow">
+      <div class="step">Anuncio</div><i class="arr"></i>
+      <div class="step">Landing</div><i class="arr"></i>
+      <div class="step">Formulario</div><i class="arr"></i>
+      <div class="step win">Agenda reunión<small>evento: Lead / Schedule</small></div>
+    </div>
+  </div>
+  <div class="flowrow a">
+    <div class="flabel c-green">🛒 Ventas</div>
+    <div class="flow">
+      <div class="step">Anuncio</div><i class="arr"></i>
+      <div class="step">Producto</div><i class="arr"></i>
+      <div class="step">Carrito / Checkout</div><i class="arr"></i>
+      <div class="step win">Compra<small>evento: Purchase + valor</small></div>
+    </div>
+  </div>
+  <div class="pills a">
+    <span>Leads también puede usar <b>Formulario instantáneo</b> (dentro de FB/IG)</span>
+    <span>Más fácil = más leads, pero <b>menos calificados</b></span>
+  </div>
+</section>
+
+<!-- ============ 03 PIXEL / AUDIENCIAS ============ -->
+<section class="slide divider" data-sec="03 · Pixel y Audiencias">
+  <div class="num a">03</div>
+  <h2 class="a big">Pixel, CAPI y Audiencias</h2>
+  <p class="a lead">El sensor, el respaldo y las listas.</p>
+</section>
+
+<section class="slide" data-sec="03 · Pixel y Audiencias">
+  <h2 class="a">¿Cómo viajan los datos?</h2>
+  <div class="dataflow">
+    <svg viewBox="0 0 1400 520" class="df-svg">
+      <path id="p1" class="draw" d="M250 140 C520 140 520 260 700 260"/>
+      <path id="p2" class="draw" d="M250 380 C520 380 520 260 700 260"/>
+      <path id="p3" class="draw d2" d="M860 260 C1000 260 1000 130 1150 130"/>
+      <path id="p4" class="draw d2" d="M860 260 C1000 260 1000 390 1150 390"/>
+      <circle r="9" class="dot"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
+      <circle r="9" class="dot g"><animateMotion dur="2.2s" begin="-.6s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+      <circle r="9" class="dot p"><animateMotion dur="2.2s" begin="-1s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+      <circle r="9" class="dot p"><animateMotion dur="2.2s" begin="-1.4s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion></circle>
+    </svg>
+    <div class="dnode a" style="left:20px;top:90px"><b>🌐 Pixel</b><small>código en el navegador</small></div>
+    <div class="dnode a g" style="left:20px;top:330px"><b>🖥️ Conversions API</b><small>desde el servidor</small></div>
+    <div class="dnode a meta" style="left:620px;top:195px"><b>∞ Meta</b><small>deduplica con event_id</small></div>
+    <div class="dnode a p" style="left:1110px;top:80px"><b>🧠 Optimización</b><small>aprende a quién mostrar</small></div>
+    <div class="dnode a p" style="left:1110px;top:340px"><b>👥 Audiencias</b><small>listas para segmentar</small></div>
+  </div>
+  <p class="foot a">Pixel + CAPI juntos: si el navegador bloquea (ad-blockers, iOS), el servidor igual avisa.</p>
+</section>
+
+<section class="slide" data-sec="03 · Pixel y Audiencias">
+  <h2 class="a">Pixel ≠ Audiencia</h2>
+  <div class="vs">
+    <div class="vs-side a c-blue">
+      <div class="emoji">📡</div>
+      <h3>Pixel</h3>
+      <div class="kw">= SENSOR</div>
+      <ul><li>Registra lo que pasa en la web</li><li>Entrena al algoritmo</li><li>Define qué es "conversión"</li><li>Se "entrena" con el tiempo</li></ul>
+    </div>
+    <div class="vs-mid a">VS</div>
+    <div class="vs-side a c-purple">
+      <div class="emoji">📋</div>
+      <h3>Audiencia</h3>
+      <div class="kw">= LISTA</div>
+      <ul><li>Grupo de personas guardado</li><li>Se usa para incluir / excluir</li><li>Se arma con datos del pixel, videos, formularios, CRM</li><li>Se actualiza sola</li></ul>
+    </div>
+  </div>
+  <p class="foot a">El Pixel alimenta · las Audiencias segmentan</p>
+</section>
+
+<section class="slide" data-sec="03 · Pixel y Audiencias">
+  <h2 class="a">Tipos de audiencia</h2>
+  <div class="grid3">
+    <div class="col a c-green">
+      <div class="col-h">🎯 Personalizadas</div>
+      <ul>
+        <li>Visitas web <b>· hasta 180 días</b></li>
+        <li>Vistas de video <b>· hasta 365 días</b></li>
+        <li>Formulario instantáneo <b>· hasta 90 días</b></li>
+        <li>Interacción IG / FB</li>
+        <li>Lista de clientes (CRM)</li>
+      </ul>
+      <div class="q">Las más valiosas ✅</div>
+    </div>
+    <div class="col a c-amber">
+      <div class="col-h">👯 Similares (Lookalike)</div>
+      <ul><li>"Gente parecida a mis clientes"</li><li>Aún se pueden crear</li><li>Meta hoy recomienda Advantage+ audience en su lugar</li></ul>
+      <div class="q">En retirada ⚠️</div>
+    </div>
+    <div class="col a c-blue">
+      <div class="col-h">🌍 Amplia / Advantage+ audience</div>
+      <ul><li>Solo <b>ubicación</b> y <b>edad mínima</b> son obligatorias</li><li>Todo lo demás es "sugerencia"</li><li>El creativo hace la segmentación</li></ul>
+      <div class="q">El estándar actual 🔵</div>
+    </div>
+  </div>
+  <p class="foot a">Desde 2025 no se puede excluir por intereses → para excluir (ej. clientes) usar <b>audiencias personalizadas</b>.</p>
+</section>
+
+<section class="slide" data-sec="03 · Pixel y Audiencias">
+  <h2 class="a">Audiencias que armamos con campañas pasadas</h2>
+  <div class="chips">
+    <span class="chip a hot">🏆 Clientes (lista CRM)</span>
+    <span class="chip a hot">✅ Leads que completaron el formulario</span>
+    <span class="chip a warm">📝 Abrieron el formulario pero no lo enviaron</span>
+    <span class="chip a warm">🎬 Vieron 50%+ del video y no convirtieron</span>
+    <span class="chip a warm">🛒 Agregaron al carrito y no compraron</span>
+    <span class="chip a cool">🌐 Visitaron la landing (últimos 30 días)</span>
+    <span class="chip a cool">❤️ Interactuaron con IG / FB (90 días)</span>
+    <span class="chip a cool">▶️ Vieron 3s+ de cualquier video</span>
+    <span class="chip a hot">🚫 Compradores recientes (para EXCLUIR)</span>
+  </div>
+  <div class="legend a"><span class="lg hot"></span>Caliente <span class="lg warm"></span>Tibia <span class="lg cool"></span>Fría-tibia</div>
+</section>
+
+<!-- ============ 04 EMBUDO ============ -->
+<section class="slide divider" data-sec="04 · Tipos de campaña">
+  <div class="num a">04</div>
+  <h2 class="a big">Tipos de campaña</h2>
+  <p class="a lead">Según dónde está la persona en el embudo.</p>
+</section>
+
+<section class="slide" data-sec="04 · Tipos de campaña">
+  <h2 class="a">El embudo</h2>
+  <div class="funnel">
+    <div class="fz a tofu"><div class="fz-bar"><b>TOFU</b> Prospección</div><div class="fz-info"><span>👥 Amplia / Advantage+</span><span>💬 "Tengo esto para ti"</span><span>🎯 Descubrir gente nueva</span></div></div>
+    <div class="fz a mofu"><div class="fz-bar"><b>MOFU</b> Remarketing tibio</div><div class="fz-info"><span>👥 Vieron video / visitaron web</span><span>💬 Prueba social, casos, objeciones</span><span>🎯 Convencer</span></div></div>
+    <div class="fz a bofu"><div class="fz-bar"><b>BOFU</b> Remarketing caliente</div><div class="fz-info"><span>👥 Abrieron formulario / carrito</span><span>💬 Oferta, urgencia, "te falta 1 paso"</span><span>🎯 Cerrar</span></div></div>
+    <div class="fz a post"><div class="fz-bar"><b>POST</b> Clientes</div><div class="fz-info"><span>👥 Lista de clientes</span><span>💬 Upsell / recompra / referidos</span><span>🎯 Más valor por cliente</span></div></div>
+  </div>
+</section>
+
+<section class="slide" data-sec="04 · Tipos de campaña">
+  <h2 class="a">Otras campañas útiles</h2>
+  <div class="grid3">
+    <div class="card a tall">🧪<b>Testing</b><small>Solo para probar creativos nuevos</small></div>
+    <div class="card a tall">🚀<b>Escala</b><small>Solo creativos ganadores</small></div>
+    <div class="card a tall">♾️<b>Evergreen</b><small>Siempre prendida, ganadores probados</small></div>
+    <div class="card a tall">🎬<b>Video views barata</b><small>Llena audiencias de video para remarketing</small></div>
+    <div class="card a tall">🔥<b>Lanzamiento / promo</b><small>Corta, con fecha de término</small></div>
+    <div class="card a tall">🤖<b>Advantage+ Sales / Leads</b><small>Todo automático · probar aparte</small></div>
+  </div>
+</section>
+
+<!-- ============ 05 PRESUPUESTO ============ -->
+<section class="slide divider" data-sec="05 · Presupuestos">
+  <div class="num a">05</div>
+  <h2 class="a big">Presupuestos</h2>
+  <p class="a lead">El presupuesto depende de qué necesita la campaña: aprender o vender.</p>
+</section>
+
+<section class="slide" data-sec="05 · Presupuestos">
+  <h2 class="a">La fase de aprendizaje</h2>
+  <div class="learn">
+    <div class="learn-bar a"><div class="learn-fill"></div><div class="learn-ticks"><span>0</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50 ✅</span></div></div>
+    <div class="learn-cap a">conversiones del evento optimizado · por <b>ad set</b> · en <b>7 días</b></div>
+  </div>
+  <div class="grid3 small">
+    <div class="card a">🟡 <b>Aprendiendo</b><small>Resultados inestables, no tocar</small></div>
+    <div class="card a">🟢 <b>Activo</b><small>Llegó a ~50 → entrega estable</small></div>
+    <div class="card a">🔴 <b>Aprendizaje limitado</b><small>No llega a 50 → falta presupuesto o el evento es muy difícil</small></div>
+  </div>
+</section>
+
+<section class="slide" data-sec="05 · Presupuestos">
+  <h2 class="a">¿Cuánto necesito para salir del aprendizaje?</h2>
+  <div class="formula a">
+    <span class="fbox">Presupuesto diario</span><span class="op">≈</span><span class="fbox c-blue">CPA objetivo</span><span class="op">×</span><span class="fbox c-purple">50</span><span class="op">÷</span><span class="fbox c-pink">7 días</span>
+  </div>
+  <div class="example a">
+    <div class="ex-t">Ejemplo</div>
+    <div class="ex-row"><span>CPL objetivo</span><b>$5.000</b></div>
+    <div class="ex-row"><span>× 50 leads ÷ 7</span><b class="count" data-to="35714">$0</b></div>
+    <div class="ex-row"><span>≈ por día, por ad set</span><b class="big-g">~$36.000 CLP</b></div>
+  </div>
+  <p class="foot a">Por eso más ad sets = más presupuesto necesario. Menos ad sets = aprende más rápido.</p>
+</section>
+
+<section class="slide" data-sec="05 · Presupuestos">
+  <h2 class="a">3 presupuestos según la estrategia</h2>
+  <div class="grid3">
+    <div class="col a c-amber">
+      <div class="col-h">🌱 Para aprender</div>
+      <ul><li>Pixel nuevo o creativo nuevo</li><li>Mínimo: el de la fórmula</li><li>Optimizar a un evento "más arriba" si no alcanza (ej. ver contenido)</li><li>Paciencia: no tocar en 7 días</li></ul>
+    </div>
+    <div class="col a c-green">
+      <div class="col-h">🚀 Para vender ya</div>
+      <ul><li>Requiere <b>pixel entrenado</b> (historial de conversiones)</li><li>Creativos ya probados</li><li>Presupuesto alto desde el día 1</li><li>Sin pixel entrenado = quemar plata</li></ul>
+    </div>
+    <div class="col a c-purple">
+      <div class="col-h">🔁 Remarketing</div>
+      <ul><li>Audiencias chicas → presupuesto chico</li><li>Mirar <b>frecuencia</b> (que no se sature)</li><li>Crece a medida que crecen las audiencias</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-sec="05 · Presupuestos">
+  <h2 class="a">Escalar sin romper nada</h2>
+  <div class="vs">
+    <div class="vs-side a c-blue">
+      <div class="emoji">⬆️</div><h3>Vertical</h3>
+      <div class="stairs"><i style="--h:30%"></i><i style="--h:45%"></i><i style="--h:60%"></i><i style="--h:78%"></i><i style="--h:100%"></i></div>
+      <ul><li>Subir presupuesto de a poco</li><li>Práctica común: +10–20% cada 3–4 días</li></ul>
+    </div>
+    <div class="vs-mid a">o</div>
+    <div class="vs-side a c-purple">
+      <div class="emoji">↔️</div><h3>Horizontal</h3>
+      <div class="dupes"><i></i><i></i><i></i></div>
+      <ul><li>Duplicar a nuevos ad sets / audiencias</li><li>Reusar el mismo <b>Post ID</b> (mantiene likes y comentarios)</li></ul>
+    </div>
+  </div>
+  <p class="foot a">⚠️ El "20%" es una regla práctica, no oficial. Meta solo dice que los cambios "significativos" reinician el aprendizaje.</p>
+</section>
+
+<section class="slide" data-sec="05 · Presupuestos">
+  <h2 class="a">Qué reinicia el aprendizaje 🔄</h2>
+  <div class="chips">
+    <span class="chip a warm">💰 Cambio grande de presupuesto</span>
+    <span class="chip a warm">🎬 Agregar / cambiar creativos</span>
+    <span class="chip a warm">👥 Cambiar audiencia</span>
+    <span class="chip a warm">🎯 Cambiar evento de optimización</span>
+    <span class="chip a warm">💲 Cambiar estrategia de puja</span>
+    <span class="chip a warm">⏸️ Pausar 7+ días</span>
+  </div>
+  <p class="foot a">Regla de oro: <b>decidir, lanzar y dejar trabajar.</b> Tocar todos los días = campaña que nunca aprende.</p>
+</section>
+
+<!-- ============ 06 ABO CBO ============ -->
+<section class="slide divider" data-sec="06 · ABO vs CBO">
+  <div class="num a">06</div>
+  <h2 class="a big">ABO vs CBO</h2>
+  <p class="a lead">¿Quién reparte la plata: tú o Meta?</p>
+</section>
+
+<section class="slide" data-sec="06 · ABO vs CBO">
+  <h2 class="a">¿Quién reparte la plata?</h2>
+  <div class="budget-vs">
+    <div class="bv a">
+      <h3 class="c-blue-t">ABO <small>presupuesto por ad set</small></h3>
+      <div class="bv-sets">
+        <div class="bs"><div class="bs-fill" style="--w:33%"></div><span>Ad set A · $10k</span></div>
+        <div class="bs"><div class="bs-fill" style="--w:33%"></div><span>Ad set B · $10k</span></div>
+        <div class="bs"><div class="bs-fill" style="--w:33%"></div><span>Ad set C · $10k</span></div>
+      </div>
+      <div class="who">🙋 Tú decides → reparto parejo</div>
+    </div>
+    <div class="bv a">
+      <h3 class="c-purple-t">CBO <small>"Presupuesto de campaña Advantage+"</small></h3>
+      <div class="bv-sets">
+        <div class="bs cbo"><div class="bs-fill" style="--w:70%"></div><span>Ad set A · $21k 🔥</span></div>
+        <div class="bs cbo"><div class="bs-fill" style="--w:22%"></div><span>Ad set B · $6,6k</span></div>
+        <div class="bs cbo"><div class="bs-fill" style="--w:8%"></div><span>Ad set C · $2,4k</span></div>
+      </div>
+      <div class="who">🤖 Meta decide → plata al que rinde</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-sec="06 · ABO vs CBO">
+  <h2 class="a">¿Cuándo usar cada una?</h2>
+  <table class="tbl a">
+    <tr><th></th><th class="c-blue-t">ABO</th><th class="c-purple-t">CBO</th></tr>
+    <tr><td>Ideal para</td><td>🧪 Testear</td><td>🚀 Escalar</td></tr>
+    <tr><td>Control</td><td>Total</td><td>Meta decide</td></tr>
+    <tr><td>Cada ad set recibe gasto</td><td>✅ Garantizado</td><td>❌ Algunos casi nada</td></tr>
+    <tr><td>Test justo entre audiencias / creativos</td><td>✅</td><td>❌</td></tr>
+    <tr><td>Menos trabajo manual</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Remarketing (audiencias chicas)</td><td>✅ Controlas el gasto</td><td>⚠️ Puede gastar de más</td></tr>
+  </table>
+</section>
+
+<!-- ============ 07 ARQUITECTURA ============ -->
+<section class="slide divider" data-sec="07 · Arquitectura">
+  <div class="num a">07</div>
+  <h2 class="a big">Arquitectura de cuenta</h2>
+  <p class="a lead">Varias campañas a la vez, cada una con su trabajo.</p>
+</section>
+
+<section class="slide" data-sec="07 · Arquitectura">
+  <h2 class="a">El sistema</h2>
+  <div class="arch">
+    <div class="ab a main"><div class="ab-p">~60–70%</div><b>🚀 Principal</b><small>CBO · ganadores probados · la que vende</small></div>
+    <div class="ab a test"><div class="ab-p">~15–20%</div><b>🧪 Testing</b><small>ABO · creativos nuevos · futura principal</small></div>
+    <div class="ab a rmk"><div class="ab-p">~10–20%</div><b>🔁 Remarketing</b><small>MOFU / BOFU · audiencias propias</small></div>
+  </div>
+  <p class="foot a">Porcentajes = punto de partida de referencia, no regla. Se ajustan por negocio y por volumen.</p>
+</section>
+
+<section class="slide" data-sec="07 · Arquitectura">
+  <h2 class="a">El ciclo de relevo ♻️</h2>
+  <div class="cycle">
+    <svg viewBox="0 0 600 600" class="cyc-svg"><circle cx="300" cy="300" r="220" class="cyc-ring"/><circle r="12" class="dot"><animateMotion dur="6s" repeatCount="indefinite" path="M300 80 A220 220 0 1 1 299.9 80"/></circle></svg>
+    <div class="cs a" style="left:50%;top:13.3%">🧪 <b>Testing</b><small>se prueban 3–5 creativos</small></div>
+    <div class="cs a" style="left:86.7%;top:50%">🏆 <b>Gana uno</b><small>mejor CPA / ROAS</small></div>
+    <div class="cs a" style="left:50%;top:86.7%">🎓 <b>Se gradúa</b><small>pasa a Principal (Post ID)</small></div>
+    <div class="cs a" style="left:13.3%;top:50%">😴 <b>Se fatiga</b><small>sube frecuencia y CPA</small></div>
+  </div>
+</section>
+
+<!-- ============ 08 ADVANTAGE+ ============ -->
+<section class="slide divider" data-sec="08 · Advantage+">
+  <div class="num a">08</div>
+  <h2 class="a big">Advantage+ y Meta AI</h2>
+  <p class="a lead">Meta te empuja a prender todo. No hay que prender todo.</p>
+</section>
+
+<section class="slide" data-sec="08 · Advantage+">
+  <h2 class="a">¿Qué es "Advantage+"?</h2>
+  <div class="grid4">
+    <div class="card a tall">👥<b>Audiencia</b><small>Meta amplía la segmentación sola</small></div>
+    <div class="card a tall">📍<b>Ubicaciones</b><small>Reels, Feed, Stories, etc. automático</small></div>
+    <div class="card a tall">💰<b>Presupuesto</b><small>= CBO</small></div>
+    <div class="card a tall">🎨<b>Creativo</b><small>IA modifica tus anuncios</small><span class="badge red">PELIGRO</span></div>
+  </div>
+  <p class="foot a">En 2026 las mejoras creativas vienen <b>pre-seleccionadas</b> en campañas de Ventas, Leads y App.</p>
+</section>
+
+<section class="slide" data-sec="08 · Advantage+">
+  <h2 class="a">El semáforo</h2>
+  <div class="traffic">
+    <div class="tl a green"><div class="light"></div><div><b>Suele servir</b><ul><li>Ubicaciones Advantage+</li><li>Audiencia Advantage+ (con buen pixel)</li><li>Presupuesto de campaña (para escalar)</li></ul></div></div>
+    <div class="tl a amber"><div class="light"></div><div><b>Testear primero</b><ul><li>Ajustes de brillo / contraste</li><li>Recorte a otros formatos</li><li>Campañas Advantage+ Sales</li></ul></div></div>
+    <div class="tl a red"><div class="light"></div><div><b>Apagar por defecto</b><ul><li>🎵 Música automática</li><li>✍️ Variaciones de texto</li><li>🖼️ Imágenes / fondos IA</li><li>💬 Subtítulos / overlays auto</li><li>🎞️ Animación de imágenes</li><li>🌐 Traducción automática</li></ul></div></div>
+  </div>
+  <p class="foot a">Criterio: <b>sí</b> a lo que cambia <i>cómo se entrega</i> · <b>no</b> a lo que cambia <i>qué dice o muestra</i> tu anuncio.</p>
+</section>
+
+<section class="slide" data-sec="08 · Advantage+">
+  <h2 class="a">Checklist antes de publicar ✅</h2>
+  <div class="toggles">
+    <div class="tg a"><span>Mejoras creativas estándar</span><i class="sw off"></i></div>
+    <div class="tg a"><span>Agregar música</span><i class="sw off"></i></div>
+    <div class="tg a"><span>Variaciones de texto</span><i class="sw off"></i></div>
+    <div class="tg a"><span>Generación de fondos / imagen IA</span><i class="sw off"></i></div>
+    <div class="tg a"><span>Superposiciones de texto</span><i class="sw off"></i></div>
+    <div class="tg a"><span>Ubicaciones Advantage+</span><i class="sw on"></i></div>
+    <div class="tg a"><span>Revisar preview de CADA ubicación</span><i class="sw on"></i></div>
+    <div class="tg a"><span>URL y UTMs correctos</span><i class="sw on"></i></div>
+  </div>
+  <p class="foot a">Se apagan <b>por anuncio</b> y uno por uno. Al duplicar, revisar de nuevo: a veces vuelven a encenderse.</p>
+</section>
+
+<!-- ============ 09 PELEA ============ -->
+<section class="slide divider" data-sec="09 · La pelea con Meta">
+  <div class="num a">09</div>
+  <h2 class="a big">La pelea con Meta 🥊</h2>
+  <p class="a lead">La plataforma no está de tu lado. Revisar siempre.</p>
+</section>
+
+<section class="slide" data-sec="09 · La pelea con Meta">
+  <h2 class="a">Lo que pasa (y va a pasar)</h2>
+  <div class="grid3">
+    <div class="card a warn">🔛<b>Activa cosas sin preguntar</b><small>Mejoras IA, ubicaciones, "recomendaciones" aplicadas</small></div>
+    <div class="card a warn">🐛<b>Bugs de reporte</b><small>Números que cambian, atribución que no cuadra</small></div>
+    <div class="card a warn">⛔<b>Rechazos arbitrarios</b><small>Anuncios rechazados sin razón clara → apelar</small></div>
+    <div class="card a warn">🔒<b>Cuentas restringidas</b><small>Bloqueos de BM / cuenta publicitaria / perfil</small></div>
+    <div class="card a warn">🔁<b>Cambios en la interfaz</b><small>Nombres y botones que se mueven seguido</small></div>
+    <div class="card a warn">💸<b>"Recomendaciones"</b><small>Casi siempre = gastar más</small></div>
+  </div>
+</section>
+
+<section class="slide" data-sec="09 · La pelea con Meta">
+  <h2 class="a">Rutina de sobrevivencia</h2>
+  <div class="timeline">
+    <div class="tlx a"><div class="tlx-h">📅 Diario</div><ul><li>Gasto vs presupuesto</li><li>Anuncios rechazados</li><li>Estado de la cuenta</li></ul></div>
+    <div class="tlx a"><div class="tlx-h">🗓️ Semanal</div><ul><li>Revisar toggles de IA</li><li>Eventos del pixel activos</li><li>Frecuencia / fatiga</li><li>Cruce con CRM / ventas reales</li></ul></div>
+    <div class="tlx a"><div class="tlx-h">🔐 Siempre</div><ul><li>2+ admins en el Business Manager</li><li>2FA activado</li><li>Métodos de pago de respaldo</li><li>No aceptar "recomendaciones" sin leer</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ 10 MEDIR PIXEL ============ -->
+<section class="slide divider" data-sec="10 · Qué medir">
+  <div class="num a">10</div>
+  <h2 class="a big">Qué medir en el Pixel</h2>
+  <p class="a lead">Una cosa es entrenar a Meta. Otra es entender el embudo.</p>
+</section>
+
+<section class="slide" data-sec="10 · Qué medir">
+  <h2 class="a">Menos es más</h2>
+  <div class="vs">
+    <div class="vs-side a c-red">
+      <div class="emoji">😵</div><h3>Pixel sobrecargado</h3>
+      <div class="evcloud"><span>scroll_25</span><span>scroll_50</span><span>scroll_75</span><span>video_10</span><span>video_25</span><span>video_50</span><span>video_75</span><span>click_btn</span><span>form_q1</span><span>form_q2</span><span>form_q3</span><span>time_30s</span></div>
+      <ul><li>Señales confusas</li><li>Difícil saber qué optimizar</li></ul>
+    </div>
+    <div class="vs-mid a">VS</div>
+    <div class="vs-side a c-green">
+      <div class="emoji">🎯</div><h3>Pixel limpio</h3>
+      <div class="evcloud clean"><span>PageView</span><span>Ver_video</span><span>Lead ⭐</span></div>
+      <ul><li>Pocas señales, claras</li><li>1 evento = 1 objetivo</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-sec="10 · Qué medir">
+  <h2 class="a">Eventos recomendados por caso</h2>
+  <div class="grid2">
+    <div class="col a c-blue">
+      <div class="col-h">🧲 Landing + formulario (agenda)</div>
+      <div class="evpath"><span>PageView</span><i class="arr"></i><span>Ver_video</span><i class="arr"></i><span class="star">Lead ⭐</span><i class="arr"></i><span>Schedule</span></div>
+      <ul><li>Optimizar a <b>Lead</b> (formulario terminado)</li><li>Ver_video → sirve para audiencias de remarketing</li></ul>
+    </div>
+    <div class="col a c-green">
+      <div class="col-h">🛒 Ecommerce</div>
+      <div class="evpath"><span>ViewContent</span><i class="arr"></i><span>AddToCart</span><i class="arr"></i><span>InitiateCheckout</span><i class="arr"></i><span class="star">Purchase ⭐</span></div>
+      <ul><li>Eventos <b>estándar</b> de Meta</li><li>Purchase siempre con <b>valor y moneda</b></li></ul>
+    </div>
+  </div>
+  <p class="foot a">Usar eventos estándar cuando existan + Conversions API con <b>event_id</b> para no duplicar.</p>
+</section>
+
+<section class="slide" data-sec="10 · Qué medir">
+  <h2 class="a">Dos sistemas de medición distintos</h2>
+  <div class="lanes">
+    <div class="lane a"><div class="lane-h c-blue-t">🤖 Para Meta (entrenar)</div><div class="lane-b"><span>Pocos eventos</span><span>Limpios</span><span>Pixel + CAPI</span></div></div>
+    <div class="lane a"><div class="lane-h c-purple-t">🧑 Para nosotros (diagnosticar)</div><div class="lane-b"><span>% scroll promedio</span><span>Hasta dónde vio el video</span><span>Pregunta del formulario donde abandonan</span><span>Tiempo en página</span><span>Clics por sección</span><span>Grabaciones de sesión</span></div></div>
+  </div>
+  <p class="foot a">Herramientas: GA4 · Microsoft Clarity (mapas de calor + grabaciones, gratis) · tracking propio del formulario</p>
+</section>
+
+<section class="slide" data-sec="10 · Qué medir">
+  <h2 class="a">¿Dónde se cae el embudo? <small class="muted">(ejemplo)</small></h2>
+  <div class="leak">
+    <div class="lk a"><span>Visitas a landing</span><div class="lk-bar" style="--w:100%"><b>100%</b></div></div>
+    <div class="lk a"><span>Scroll 50%+</span><div class="lk-bar" style="--w:62%"><b>62%</b></div></div>
+    <div class="lk a"><span>Vio 50% del video</span><div class="lk-bar" style="--w:38%"><b>38%</b></div></div>
+    <div class="lk a"><span>Abrió formulario</span><div class="lk-bar" style="--w:21%"><b>21%</b></div></div>
+    <div class="lk a bad"><span>Pregunta 3: "presupuesto"</span><div class="lk-bar" style="--w:9%"><b>9%</b></div><em>← ⚠️ fuga</em></div>
+    <div class="lk a"><span>Envió formulario</span><div class="lk-bar" style="--w:7%"><b>7%</b></div></div>
+  </div>
+  <p class="foot a">Esto no se lo mandamos a Meta: es para que <b>nosotros</b> sepamos qué arreglar.</p>
+</section>
+
+<!-- ============ 11 MÉTRICAS ============ -->
+<section class="slide divider" data-sec="11 · Métricas">
+  <div class="num a">11</div>
+  <h2 class="a big">Métricas por nivel</h2>
+  <p class="a lead">Cada nivel responde una pregunta distinta.</p>
+</section>
+
+<section class="slide" data-sec="11 · Métricas">
+  <h2 class="a">Qué mirar en cada nivel</h2>
+  <div class="grid3">
+    <div class="col a c-blue"><div class="col-h">📣 Campaña</div><div class="q">"¿Es rentable?"</div><ul><li><b>CPA / CPL</b> costo por resultado</li><li><b>ROAS</b> ingresos ÷ gasto</li><li><b>Gasto total</b></li><li>Leads → reuniones → ventas (CRM)</li></ul></div>
+    <div class="col a c-purple"><div class="col-h">🎯 Ad set</div><div class="q">"¿La audiencia responde?"</div><ul><li><b>CPM</b> costo por 1.000 impresiones</li><li><b>Frecuencia</b> veces que ve el anuncio</li><li><b>Alcance</b></li><li>Estado de aprendizaje</li></ul></div>
+    <div class="col a c-pink"><div class="col-h">🎬 Anuncio</div><div class="q">"¿El creativo funciona?"</div><ul><li><b>Hook rate</b></li><li><b>Hold rate</b></li><li><b>CTR (enlace)</b></li><li><b>CPC</b></li><li>CPA por anuncio</li></ul></div>
+  </div>
+</section>
+
+<section class="slide" data-sec="11 · Métricas">
+  <h2 class="a">Métricas del creativo</h2>
+  <div class="grid2 metrics">
+    <div class="mt a"><div class="mt-n">Hook rate</div><div class="mt-f">vistas de 3s ÷ impresiones</div><div class="mt-q">¿Los primeros 3 segundos frenan el scroll?</div></div>
+    <div class="mt a"><div class="mt-n">Hold rate</div><div class="mt-f">ThruPlays ÷ vistas de 3s</div><div class="mt-q">¿Lo siguen viendo?</div></div>
+    <div class="mt a"><div class="mt-n">CTR (enlace)</div><div class="mt-f">clics en el enlace ÷ impresiones</div><div class="mt-q">¿Dan ganas de hacer clic?</div></div>
+    <div class="mt a"><div class="mt-n">Tasa de conversión</div><div class="mt-f">conversiones ÷ clics</div><div class="mt-q">¿La landing cumple lo que promete el anuncio?</div></div>
+  </div>
+  <p class="foot a">Hook y hold rate no vienen en Ads Manager → se crean como <b>métricas personalizadas</b>.</p>
+</section>
+
+<section class="slide" data-sec="11 · Métricas">
+  <h2 class="a">Diagnóstico rápido 🩺</h2>
+  <div class="diag">
+    <div class="dg a"><span class="sym">CPM alto</span><i class="arr"></i><span class="fix">Audiencia chica / competencia / creativo con baja calidad</span></div>
+    <div class="dg a"><span class="sym">Hook rate bajo</span><i class="arr"></i><span class="fix">Cambiar los primeros 3 segundos</span></div>
+    <div class="dg a"><span class="sym">Hold rate bajo</span><i class="arr"></i><span class="fix">El cuerpo del video aburre → acortar / ritmo</span></div>
+    <div class="dg a"><span class="sym">CTR bajo</span><i class="arr"></i><span class="fix">Oferta o CTA poco claros</span></div>
+    <div class="dg a"><span class="sym">CTR bien, conversión mal</span><i class="arr"></i><span class="fix">Problema de landing / formulario</span></div>
+    <div class="dg a"><span class="sym">Frecuencia alta + CPA subiendo</span><i class="arr"></i><span class="fix">Fatiga creativa → nuevos creativos</span></div>
+  </div>
+</section>
+
+<!-- ============ 12 ESTRATEGIAS ============ -->
+<section class="slide divider" data-sec="12 · Estrategias">
+  <div class="num a">12</div>
+  <h2 class="a big">Estrategias de Paid Media</h2>
+  <p class="a lead">El juego es armar un arsenal de creativos que funcionan.</p>
+</section>
+
+<section class="slide" data-sec="12 · Estrategias">
+  <h2 class="a">Creative testing → Graduación</h2>
+  <div class="grad-flow">
+    <div class="gf a"><div class="gf-h">🧪 Sandbox (ABO)</div><div class="gf-ads"><i class="lose"></i><i class="win"></i><i class="lose"></i><i class="lose"></i><i class="meh"></i></div><small>3–5 creativos · mismo presupuesto</small></div>
+    <i class="bigarr a"></i>
+    <div class="gf a"><div class="gf-h">🏆 Ganador</div><div class="gf-ads"><i class="win big"></i></div><small>mejor CPA con volumen suficiente</small></div>
+    <i class="bigarr a"></i>
+    <div class="gf a"><div class="gf-h">🚀 Principal (CBO)</div><div class="gf-ads"><i class="win"></i><i class="win"></i><i class="win"></i></div><small>se agrega con el mismo <b>Post ID</b></small></div>
+  </div>
+  <p class="foot a">Post ID = el anuncio conserva likes, comentarios y shares → más prueba social.</p>
+</section>
+
+<section class="slide" data-sec="12 · Estrategias">
+  <h2 class="a">Iterar al ganador 🧬</h2>
+  <div class="iter">
+    <div class="it-core a">🏆<b>Concepto ganador</b></div>
+    <div class="it-v a" style="--a:0deg">🪝 Otro hook</div>
+    <div class="it-v a" style="--a:60deg">📐 Otro formato</div>
+    <div class="it-v a" style="--a:120deg">🧑 Otro actor / voz</div>
+    <div class="it-v a" style="--a:180deg">⏱️ Otra duración</div>
+    <div class="it-v a" style="--a:240deg">🎨 Otro estilo visual</div>
+    <div class="it-v a" style="--a:300deg">✍️ Otro copy / oferta</div>
+  </div>
+  <p class="foot a">Lo que funciona se repite con variaciones. El resto del presupuesto de test sigue explorando ideas nuevas.</p>
+</section>
+
+<section class="slide" data-sec="12 · Estrategias">
+  <h2 class="a">El arsenal de ángulos creativos</h2>
+  <div class="grid4 arsenal">
+    <div class="card a">🗣️<b>Testimonio</b></div>
+    <div class="card a">📱<b>UGC</b><small>contenido estilo usuario</small></div>
+    <div class="card a">🔧<b>Demo</b><small>cómo funciona</small></div>
+    <div class="card a">😤<b>Problema → solución</b></div>
+    <div class="card a">⚖️<b>Comparativa</b><small>nosotros vs otros</small></div>
+    <div class="card a">🎁<b>Oferta directa</b></div>
+    <div class="card a">👤<b>Founder</b><small>el dueño habla</small></div>
+    <div class="card a">🎬<b>Detrás de cámaras</b></div>
+  </div>
+  <p class="foot a">Meta: saber qué ángulos le funcionan a <b>cada negocio</b> → marcar ganadores ✅ y reciclarlos.</p>
+</section>
+
+<section class="slide" data-sec="12 · Estrategias">
+  <h2 class="a">Más estrategias con nombre</h2>
+  <div class="grid3 strat">
+    <div class="card a"><b>🌍 Broad targeting</b><small>"El creativo es la segmentación": audiencia amplia y el anuncio filtra</small></div>
+    <div class="card a"><b>🧱 Consolidación</b><small>Pocas campañas y ad sets → más datos por ad set → aprende más rápido</small></div>
+    <div class="card a"><b>🔪 Kill rules</b><small>Regla para apagar: ej. gastó 2–3× el CPA objetivo sin resultado</small></div>
+    <div class="card a"><b>😴 Rotación por fatiga</b><small>Frecuencia ↑ + CTR ↓ → creativo nuevo</small></div>
+    <div class="card a"><b>🎯 Cost cap / Bid cap</b><small>Escalar con un tope de costo por resultado</small></div>
+    <div class="card a"><b>🚫 Exclusiones</b><small>Sacar clientes y leads recientes de la prospección</small></div>
+    <div class="card a"><b>🧪 Test de 1 variable</b><small>Cambiar una sola cosa por test para saber qué funcionó</small></div>
+    <div class="card a"><b>♾️ Evergreen</b><small>Una campaña siempre activa con los mejores de todos los tiempos</small></div>
+    <div class="card a"><b>📈 Escalado vertical / horizontal</b><small>Más presupuesto vs más ad sets</small></div>
+  </div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="slide" data-sec="Resumen">
+  <h2 class="a">10 reglas para llevarse</h2>
+  <ol class="rules">
+    <li class="a">Objetivo = la acción que quieres (Leads o Ventas)</li>
+    <li class="a">Pixel + CAPI, con pocos eventos y limpios</li>
+    <li class="a">~50 conversiones / semana / ad set para aprender</li>
+    <li class="a">Presupuesto ≈ CPA × 50 ÷ 7</li>
+    <li class="a">ABO para testear, CBO para escalar</li>
+    <li class="a">Principal + Testing + Remarketing, en paralelo</li>
+    <li class="a">Apagar las mejoras IA que cambian el anuncio</li>
+    <li class="a">Revisar la cuenta todas las semanas</li>
+    <li class="a">Medir el embudo aparte, para nosotros</li>
+    <li class="a">Ganador → se gradúa → se itera</li>
+  </ol>
+</section>
+
+<section class="slide" data-sec="Fuentes">
+  <h2 class="a">Fuentes</h2>
+  <ul class="sources a">
+    <li>Fase de aprendizaje (50 eventos / 7 días): <a href="https://jetfuel.agency/what-is-the-meta-ads-learning-phase-how-to-exit-it-faster-in-2026/" target="_blank">jetfuel.agency</a> · <a href="https://www.cometly.com/post/facebook-ads-learning-phase-stuck" target="_blank">cometly.com</a></li>
+    <li>Cambios significativos y regla del 20% (no oficial): <a href="https://withblip.com/blog/meta-ads-learning-phase-bulk-editing/" target="_blank">withblip.com</a> · <a href="https://roaspig.com/blog/budget-increase-frequency-meta-ads/" target="_blank">roaspig.com</a></li>
+    <li>6 objetivos (ODAX): <a href="https://www.flighted.co/blog/every-meta-campaign-objective-explained" target="_blank">flighted.co</a></li>
+    <li>Advantage+ Sales y mejoras creativas por defecto: <a href="https://adadvisor.ai/blog/meta-advantage-plus" target="_blank">adadvisor.ai</a> · <a href="https://www.sparkugc.com/resources/advantage-plus-creative-best-practices-2026" target="_blank">sparkugc.com</a> · <a href="https://metalla.digital/meta-advantage-plus-creative-enhancements/" target="_blank">metalla.digital</a></li>
+    <li>Retención de audiencias (180 / 365 / 90 días): <a href="https://benly.ai/learn/meta-ads/custom-audiences-guide" target="_blank">benly.ai</a> · <a href="https://stape.io/blog/facebook-custom-audiences" target="_blank">stape.io</a></li>
+    <li>Fin de exclusiones por intereses / lookalikes / Advantage+ audience: <a href="https://pixelmovers.co/blog/meta-detailed-targeting-removed-what-works-2026" target="_blank">pixelmovers.co</a> · <a href="https://lineardesign.com/blog/metas-advantage-audience/" target="_blank">lineardesign.com</a></li>
+    <li>Hook rate / hold rate: <a href="https://billo.app/blog/hook-rate-to-hold-rate/" target="_blank">billo.app</a> · <a href="https://adrio.ai/blog/thumbstop-rate-vs-hook-rate-vs-hold-rate" target="_blank">adrio.ai</a></li>
+    <li>CAPI y deduplicación con event_id: <a href="https://www.conversios.io/blog/facebook-event-deduplication-pixel-capi/" target="_blank">conversios.io</a> · <a href="https://adsuploader.com/blog/meta-conversions-api" target="_blank">adsuploader.com</a></li>
+  </ul>
+</section>
+
+</div>
+</div>
+
+<div id="hud">
+  <div id="sec"></div>
+  <div id="progress"><i></i></div>
+  <div id="count"></div>
+</div>
+<button id="prev" aria-label="Anterior">‹</button>
+<button id="next" aria-label="Siguiente">›</button>
+
+<script src="deck.js"></script>
+</body>
+</html>
