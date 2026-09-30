@@ -348,3 +348,6 @@ html.static *, html.static *::before, html.static *::after { animation-duration:
 html.static .slide *, html.static .slide *::before, html.static .slide *::after { animation-duration: 0s !important; animation-delay: 0s !important; }
 .body .legend { margin-top: 0; }
 .cycle { scale: .98; margin-top: 0; }
+.flowrow .step { padding: 18px; }
+.flowrow { gap: 10px; }
+.card.hot { padding-right: 120px; }
